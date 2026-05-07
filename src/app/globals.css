@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0d1117;
+  color: #e6edf3;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #30363d; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #484f58; }
+
+/* Table styles */
+.data-table th {
+  @apply text-xs font-semibold text-gray-400 uppercase tracking-wider bg-[#161b22] px-4 py-3 text-left whitespace-nowrap border-b border-[#30363d];
+}
+.data-table td {
+  @apply px-4 py-3 text-sm text-gray-200 border-b border-[#21262d] whitespace-nowrap;
+}
+.data-table tr:hover td {
+  @apply bg-[#21262d];
+}
+.data-table tr:last-child td {
+  @apply border-b-0;
+}
+
+/* Form elements */
+.form-input {
+  @apply w-full bg-[#0d1117] border border-[#30363d] rounded-md px-3 py-2 text-sm text-gray-200
+         focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500
+         placeholder-gray-500 transition-colors;
+}
+.form-label {
+  @apply block text-xs font-medium text-gray-400 mb-1.5;
+}
+
+/* Card */
+.card {
+  @apply bg-[#161b22] border border-[#30363d] rounded-xl;
+}
+
+/* Metric card */
+.metric-card {
+  @apply card p-4 hover:border-[#484f58] transition-colors;
+}

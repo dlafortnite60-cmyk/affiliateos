@@ -40,12 +40,12 @@ export function Sidebar() {
       {/* Nav */}
       <nav className="flex-1 p-3 space-y-0.5 overflow-y-auto">
         {navItems.map(item => (
-          <div key={item.href as any}>
+          <div key={item.href }>
             {item.section && (
               <div className="text-[10px] font-semibold text-gray-500 uppercase tracking-wider px-2 py-2 mt-1">{item.section}</div>
             )}
             <Link
-              href={item.href}
+              href={item.href as any}
               className={cn(
                 'flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-sm transition-colors',
                 pathname === item.href || (item.href !== '/dashboard' && pathname.startsWith(item.href))

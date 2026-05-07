@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AffiliateOS — Performance Marketing Dashboard
 
 A full-stack Next.js + Supabase app for managing affiliate offers, funnels, creatives, and campaign metrics with automatic KPI calculations.
@@ -259,3 +260,6 @@ ORDER BY roi DESC;
 
 **CSV import not detecting columns**
 → Make sure the CSV export header language matches — try the Generic template first
+=======
+# affiliateos
+>>>>>>> 8a1e0d506400082bb84c1cd3d73cb861a3e1910c

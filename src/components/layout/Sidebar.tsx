@@ -40,7 +40,7 @@ export function Sidebar() {
       {/* Nav */}
       <nav className="flex-1 p-3 space-y-0.5 overflow-y-auto">
         {navItems.map(item => (
-          <div key={item.href}>
+          <div key={item.href as any}>
             {item.section && (
               <div className="text-[10px] font-semibold text-gray-500 uppercase tracking-wider px-2 py-2 mt-1">{item.section}</div>
             )}
